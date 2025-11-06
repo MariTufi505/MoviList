@@ -1,7 +1,4 @@
 
-import Buscar from '../pages/Buscar'
-import Ingresar from '../pages/Ingresar'
-
 const Navbar = () => {
   return (
      <div className="flex justify-between items-end h-12 bg-black border-2 p-2">

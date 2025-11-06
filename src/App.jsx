@@ -5,7 +5,6 @@ const App = () => {
   return (
     <div>
      <Inicio />
-     <HeroBanner />
     </div>
   )
 }

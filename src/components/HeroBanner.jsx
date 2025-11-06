@@ -2,18 +2,18 @@
 const HeroBanner = () => {
   return (
     <>
-      <div className="relative h-100 w-screen">
-        <div>
+      <div className="w-screen">
+        <hr className="border-white" />
+
+        <div className="w-screen h-screen relative overflow-hidden">
           <img
+            className="h-full w-full object-cover"
             src="/public/Stand-By-Me-Stephen-King-analisis-CinemaNet-1.jpg"
-            alt=""
+            alt="Imagen de referencia de la película"
           />
-        </div>
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="absolute inset-0 flex items-center">
-          <p className="text-white text-5xl font-bold z-1">
-            ¿Qué película viste?
-          </p>
+          <div className="absolute inset-0 flex items-center justify-center text-white text-7xl font-bold bg-black/60">
+            <p className="bg-black/50 m-4"> ¿Qué película viste?</p>
+          </div>
         </div>
       </div>
     </>

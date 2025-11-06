@@ -1,17 +1,18 @@
+
+import Buscar from '../pages/Buscar'
+import Ingresar from '../pages/Ingresar'
+
 const Navbar = () => {
   return (
-    <div className="bg-pink-400 flex p-5 font-light transition-transform">
-      <p className="text-white p-3 cursor-pointer hover:bg-pink-600 :hover: rounded-lg ml-2">
-        Mis Productos
-      </p>
-      <p className="text-white p-3 cursor-pointer  hover:bg-pink-600 :hover: rounded-lg ml-2">
-        Temáticas
-      </p>
-      <p className="text-white p-3 cursor-pointer  hover:bg-pink-600 :hover: rounded-lg">
-        Sobre mi
-      </p>
+     <div className="flex justify-between items-end h-12 bg-black border-2 p-2">
+      <>
+        <p className="text-white">Buscar</p>
+        <p className="text-white">MoviList</p>
+        <p className="text-white">Ingresar</p>
+      </>
     </div>
-  );
+      
+  )
 }
 
 export default Navbar

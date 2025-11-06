@@ -1,18 +1,11 @@
-
-import Footer from './components/Footer'
-import HeroBanner from './components/HeroBanner'
-import Navbar from './components/Navbar'
-import Productos from './components/Productos'
-import Redes from './components/Redes'
+import HeroBanner from "./components/HeroBanner"
+import Inicio from "./pages/Inicio"
 
 const App = () => {
   return (
-    <div className="bg-pink-300">
-      <Navbar />
-      <HeroBanner />
-      <Productos />
-      <Redes />
-      <Footer />
+    <div>
+     <Inicio />
+     <HeroBanner />
     </div>
   )
 }

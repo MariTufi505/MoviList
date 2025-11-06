@@ -1,8 +1,11 @@
-import React from 'react'
+
+import Busqueda from '../components/Busqueda'
 
 const Buscar = () => {
   return (
-    <div>Buscar</div>
+    <>
+    <Busqueda />
+    </>
   )
 }
 

@@ -1,12 +1,20 @@
-import HeroBanner from "./components/HeroBanner"
-import Inicio from "./pages/Inicio"
 
-const App = () => {
+
+
+
+import { Routes, Route } from 'react-router-dom';
+
+// ... otros imports de páginas
+
+function App() {
   return (
-    <div>
-     <Inicio />
+    // Puedes colocar Contextos o Proveedores aquí si es necesario
+    <div className="App"> 
+      
+      <Routes />
+      
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

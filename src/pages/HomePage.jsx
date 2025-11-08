@@ -5,7 +5,7 @@ import ReviewCard from "../components/ReviewCard";
 
 
 
-const Inicio = () => {
+const HomePage = () => {
   return (
     <>
       <HeroBanner />
@@ -14,4 +14,4 @@ const Inicio = () => {
   );
 }
 
-export default Inicio
+export default HomePage

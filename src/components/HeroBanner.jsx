@@ -5,7 +5,7 @@ const HeroBanner = () => {
   const [pelicula, setPelicula] = useState(null);
 
   useEffect(() => {
-    const MOVIE_ID = 550;
+    const MOVIE_ID = 680;
     getMovieById(MOVIE_ID).then(setPelicula);
   }, []);
   

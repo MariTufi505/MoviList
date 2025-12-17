@@ -1,13 +1,13 @@
 
 
-const Buscar = () => {
+const Search = () => {
   return (
     <>
       <div className="text-white">
         <p className="flex justify-center text-4xl m-9 text-center">
           ¿Que película estas buscando?
         </p>
-        <div className="bg-black border border-white w-auto p-4 m-9 h-1/2 rounded-3xl">
+        <div className="bg-black border border-white sm:w-1/2 w-3/4  p-4 m-9 h-1/2 rounded-3xl">
           <input type="text" placeholder="Escribe el nombre"></input>
         </div>
         <div className="flex justify-center">
@@ -22,4 +22,4 @@ const Buscar = () => {
   );
 }
 
-export default Buscar
+export default Search

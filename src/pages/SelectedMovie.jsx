@@ -1,7 +1,5 @@
-import Footer from "../components/Footer";
 
-
-const PeliculaSeleccionada = () => {
+const Selectedmovie = () => {
   return (
     <>
     
@@ -22,10 +20,9 @@ const PeliculaSeleccionada = () => {
         </button>
       </div>
     </div>
-    <Footer />
         </>
     
   );
 }
 
-export default PeliculaSeleccionada
+export default Selectedmovie

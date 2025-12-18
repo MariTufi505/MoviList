@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import HomePage from "../pages/HomePage";
 import SignUp from "../pages/SignUp";
 import Search from '../pages/Search'
+import Review from "../pages/Review";
 import Selectedmovie from "../pages/SelectedMovie";
 
 const AppRoutes = () => {
@@ -12,7 +13,8 @@ const AppRoutes = () => {
         <Route index element={<HomePage />} />
         <Route path="SignUp" element={<SignUp />} />
         <Route path="Selectedmovie" element={<Selectedmovie />} />
-        <Route path='Search' element={<Search />} />
+        <Route path="Search" element={<Search />} />
+        <Route path="Review" element={<Review />} />
       </Route>
     </Routes>
   );

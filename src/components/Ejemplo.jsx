@@ -3,7 +3,6 @@ import React from 'react'
 const Ejemplo = () => {
   return (
     <div>
-         
       <div className="flex justify-center">
         <hr className="border-t border-white w-80 flex" />
       </div>

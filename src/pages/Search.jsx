@@ -27,7 +27,7 @@ const Search = () => {
         <p className="flex justify-center text-4xl m-9 text-center">
           ¿Que película estas buscando?
         </p>
-        <div className="bg-black border  sm:w-1/2 w-3/4  p-4 m-9 h-1/2 rounded-3xl">
+        <div className=" bg-gray-800  sm:w-1/2 w-3/4 text-center m-auto p-4 h-1/2 rounded-3xl">
           <form id="Movie" onSubmit={handleSubmit}>
             <input
               type="text"
@@ -35,14 +35,8 @@ const Search = () => {
               value={movieLooking}
               placeholder="El resplandor, It..."
               onChange={(e) => setMovieLooking(e.target.value)}
+              className="w-3/4 p-2 rounded-xl"
             />
-            <button
-              type="submit"
-              value="Movie"
-              className="cursor-pointer bg-gray-300 rounded-2xl p-2 w-25 m-2 text-black"
-            >
-              Buscar
-            </button>
           </form>
           {error && (
             <p className="text-red-500 mt-3 text-center font-semibold">
@@ -50,8 +44,19 @@ const Search = () => {
             </p>
           )}
         </div>
+
         <div className="flex justify-center"></div>
       </div>
+      <div className="flex justify-center p-10">
+        <button
+          type="submit"
+          value="Movie"
+          className="cursor-pointer bg-gray-300 rounded-2xl p-2 w-25  text-black"
+        >
+          Buscar
+        </button>
+      </div>
+      
     </>
   );
 }

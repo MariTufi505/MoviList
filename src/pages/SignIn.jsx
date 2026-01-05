@@ -4,27 +4,41 @@ import ButtonGrey from "../components/ButtonGrey"
 const SignIn = () => {
   return (
     <>
-      <p className="pt-5 text-center text-4xl">Ingresar</p>
-      <div className="bg-black border border-white w-auto p-4 m-9 h-1/2 rounded-3xl">
+      <p className="pt-5 text-center text-4xl text-white">
+        Ingresa con tu EMAIL
+      </p>
+      <div className=" grid grid-cols-1 m-auto text-center p-5">
+        <label htmlFor="email" className="text-white text-xl">
+          Email
+        </label>
         <input
+          required
+          method="POST"
           type="email"
-          placeholder="Escribe tu mail..."
-          className="text-white"
+          placeholder="Escribe aquí tu mail"
+          className="bg-gray-800 border  text-white border-white w-2/4 p-7 m-auto h-1/2 rounded-3xl"
+        ></input>
+        <label htmlFor="password" className="text-white">
+          Constraseña
+        </label>
+        <input
+          required
+          type="password"
+          placeholder="Y la contraseña..."
+          className="bg-gray-800 border text-white border-white w-2/4 p-7 m-auto  h-1/2 rounded-3xl"
         ></input>
       </div>
-      <div className="bg-black border border-white w-auto p-4 m-9 h-1/2 text-white rounded-3xl ">
-        <input type="password" placeholder="Y la contraseña..."></input>
-      </div>
+
       <div className="flex justify-center">
         <ButtonGrey>Ingresar</ButtonGrey>
         <ButtonGrey>
           <a href="/">Volver</a>
         </ButtonGrey>
       </div>
-      <a href="/SendMail" className="flex justify-center text-xl pb-6 pt-10 text-white">
+      <a href="/SendMail" className="flex justify-center text-xl text-white">
         ¿Has olvidado la contraseña?
       </a>
-      <a href="/SignUp" className="flex justify-center text-xl pb-6 pt-5 text-white">
+      <a href="/SignUp" className="flex justify-center text-xl text-white">
         Crear Cuenta
       </a>
     </>

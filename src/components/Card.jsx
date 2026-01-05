@@ -3,8 +3,8 @@ const Card = () => {
   return (
     <>
       <hr className="border-t border-white w-90 md:w-60 mx-auto " />
-      <div className="bg-linear-to-br from-gray-600  to-gray-800 mt-10 mb-10 border w-3/4 border-gray-800 text-center mx-auto rounded-3xl ">
-        <div className="flex justify-evenly text-2xs text-white p-2 md:text-3xl grid-cols-3 m-5">
+      <div className="bg-linear-to-br from-gray-700  to-gray-800 mt-10 mb-10 border w-3/4 border-gray-800 text-center mx-auto rounded-3xl ">
+        <div className="flex justify-evenly text-2xl text-white p-2 md:text-3xl grid-cols-3 m-5">
           <p>Película</p>
           <p>Estrellas</p>
           <p>Fecha Agregado</p>

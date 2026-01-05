@@ -4,17 +4,30 @@ import ButtonGrey from '../components/ButtonGrey';
 const SignUp = () => {
   return (
     <>
-      <p className="pt-5 text-center text-4xl">Creac Cuenta</p>
-      <div className="bg-black border border-white w-auto p-4 m-9 h-1/2 rounded-3xl">
+      <p className="pt-5 text-center text-4xl text-white">Crear Cuenta</p>
+
+      <div className=" grid grid-cols-1 m-auto text-center p-5">
+        <label htmlFor="email" className="text-white text-xl">
+          Email
+        </label>
         <input
+          required
+          method="POST"
           type="email"
-          placeholder="Escribe tu mail..."
-          className="text-white"
+          placeholder="Escribe aquí tu mail"
+          className="bg-gray-800 border  text-white border-white w-2/4 p-7 m-auto h-1/2 rounded-3xl"
+        ></input>
+        <label htmlFor="password" className="text-white">
+          Constraseña
+        </label>
+        <input
+          required
+          type="password"
+          placeholder="Y la contraseña..."
+          className="bg-gray-800 border text-white border-white w-2/4 p-7 m-auto  h-1/2 rounded-3xl"
         ></input>
       </div>
-      <div className="bg-black border border-white w-auto p-4 m-9 h-1/2 text-white rounded-3xl ">
-        <input type="password" placeholder="Y la contraseña..."></input>
-      </div>
+
       <div className="flex justify-center">
         <ButtonGrey>
           <a href="/">Confirmar</a>

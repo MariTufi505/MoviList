@@ -9,7 +9,7 @@ const Search = () => {
     e.preventDefault();
 
     if (movieLooking.trim().length === 0) {
-      setError("Introduce el nombre de una película");
+      setError("Introduce el nombre de una película, por favor");
       return;
     }
 

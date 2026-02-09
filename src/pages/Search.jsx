@@ -1,42 +1,46 @@
 import { useState } from "react";
 import ButtonGrey from "../components/ButtonGrey";
 
-
 const Search = () => {
-  const [movieLooking, setMovieLooking] = useState("")
-
-  const [error, setError] = useState("")
+  const [movieLooking, setMovieLooking] = useState("");
+  const [error, setError] = useState("");
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  
+    e.preventDefault();
+
     if (movieLooking.trim().length === 0) {
-       setError("Introduce el nombre de una pelicula");
-       return;
-     }
+      setError("Introduce el nombre de una película");
+      return;
+    }
 
     setError("");
-      console.log("Buscando:", movieLooking);
-  }
-
-
+    console.log("Buscando:", movieLooking);
+  };
 
   return (
     <>
       <div className="text-white">
         <p className="flex justify-center text-4xl m-9 text-center">
-          ¿Que película estas buscando?
+          ¿Qué película estás buscando?
         </p>
-        <div className=" bg-gray-800  sm:w-1/2 w-3/4 text-center m-auto p-4 h-1/2 rounded-3xl">
-          <form id="Movie" onSubmit={handleSubmit}>
+        <div className="grid grid-cols-1 m-auto text-center p-5">
+          <form id="movieForm" onSubmit={handleSubmit}>
             <input
               type="text"
-              id="Movie"
+              id="movieInput"
               value={movieLooking}
               placeholder="El resplandor, It..."
               onChange={(e) => setMovieLooking(e.target.value)}
-              className="w-3/4 p-2 rounded-xl"
+              className="bg-gray-800 border text-white border-white w-2/4 p-7 m-auto h-1/2 rounded-3xl"
             />
+            <div className="flex justify-center p-10">
+              <button
+                type="submit"
+                className="cursor-pointer bg-gray-300 rounded-2xl p-2 w-25 text-black"
+              >
+                Buscar
+              </button>
+            </div>
           </form>
           {error && (
             <p className="text-red-500 mt-3 text-center font-semibold">
@@ -44,21 +48,9 @@ const Search = () => {
             </p>
           )}
         </div>
-
-        <div className="flex justify-center"></div>
       </div>
-      <div className="flex justify-center p-10">
-        <button
-          type="submit"
-          value="Movie"
-          className="cursor-pointer bg-gray-300 rounded-2xl p-2 w-25  text-black"
-        >
-          Buscar
-        </button>
-      </div>
-      
     </>
   );
-}
+};
 
-export default Search
+export default Search;

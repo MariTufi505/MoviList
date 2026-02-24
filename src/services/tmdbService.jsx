@@ -4,8 +4,8 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/";
 
 export const getImageUrl = (backdrop, size = "w1280") => {
   if (!backdrop) return null;
-  return `${IMAGE_BASE_URL}${size}${backdrop}`
-}
+  return `${IMAGE_BASE_URL}${size}${backdrop}`;
+};
 
 export const MoviesDescription = (overview) => {
   if (!overview) return null;
@@ -14,7 +14,7 @@ export const MoviesDescription = (overview) => {
 
 export const obtenerPeliculasPopulares = async () => {
   const response = await fetch(
-    `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es-ES`
+    `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=es-ES`,
   );
   const data = await response.json();
   return data.results;
@@ -22,15 +22,23 @@ export const obtenerPeliculasPopulares = async () => {
 
 export const getMovieDetails = async (movieId) => {
   const response = await fetch(
-    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=es-ES`
-  )
-  return response.json()
-}
+    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=es-ES`,
+  );
+  return response.json();
+};
 
 export const getMovieById = async (movieId) => {
   const response = await fetch(
-    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=es-ES`
+    `${BASE_URL}/movie/${movieId}?api_key=${API_KEY}&language=es-ES`,
   );
   const data = await response.json();
   return data;
+};
+
+export const searchMovies = async (query) => {
+  const response = await fetch(
+    `${BASE_URL}/search/movie?api_key=${API_KEY}&query=${query}&language=es-ES`,
+  );
+  const data = await response.json();
+  return data.results ?? [];
 };

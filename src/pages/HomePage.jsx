@@ -1,15 +1,23 @@
 
+import { useState } from "react";
 import HeroBanner from "../components/HeroBanner";
-import ReviewCard from "../components/ReviewCard";
+import Card from "../components/Card";
 
 
 
 
 const HomePage = () => {
+
+  const [reseñas, setReseñas] = useState([]);
+
+  const agregarReseña = (nuevaReseña) => {
+    setReseñas((prev) => [...prev, nuevaReseña]);
+  };
+
   return (
     <>
-      <HeroBanner />
-      <ReviewCard />
+      <HeroBanner onAgregarReseña={agregarReseña} />
+      <Card reseñas={reseñas}/>
     </>
   );
 }

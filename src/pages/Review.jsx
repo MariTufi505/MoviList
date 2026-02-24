@@ -2,7 +2,7 @@ import React from 'react'
 
 const Reseña = () => {
   return (
-    <div>Reseña</div>
+    <div></div>
   )
 }
 
